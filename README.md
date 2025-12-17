@@ -26,9 +26,14 @@ Add or keep the included `.nojekyll` file in the repository root so GitHub Pages
 ## 📂 Structure
 ```
 Personal-Website/
-├── index.html      # Main page
+├── docs/
+│   ├── index.html      # Main page (published by GitHub Pages)
+│   ├── css/
+│   │   └── style.css   # Global styles
+│   └── .nojekyll
+├── index.html          # Local copy for quick preview
 ├── css/
-│   └── style.css   # Global styles
+│   └── style.css       # Local copy for quick preview
 ├── LICENSE
 └── README.md
 ```
