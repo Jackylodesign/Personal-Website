@@ -7,7 +7,10 @@
   <meta name="description" content="Portfolio website for Alex Smith, a developer and designer crafting human-centered digital experiences." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -236,18 +239,20 @@
     const navToggle = document.querySelector('.nav__toggle');
     const navLinks = document.querySelector('.nav__links');
 
-    navToggle.addEventListener('click', () => {
-      const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
-      navToggle.setAttribute('aria-expanded', String(!isExpanded));
-      navLinks.classList.toggle('nav__links--open');
-    });
+    if (navToggle && navLinks) {
+      navToggle.addEventListener('click', () => {
+        const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+        navToggle.setAttribute('aria-expanded', String(!isExpanded));
+        navLinks.classList.toggle('nav__links--open');
+      });
 
-    navLinks.addEventListener('click', (event) => {
-      if (event.target.tagName === 'A') {
-        navLinks.classList.remove('nav__links--open');
-        navToggle.setAttribute('aria-expanded', 'false');
-      }
-    });
+      navLinks.addEventListener('click', (event) => {
+        if (event.target.tagName === 'A') {
+          navLinks.classList.remove('nav__links--open');
+          navToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
   </script>
 </body>
 </html>
