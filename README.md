@@ -21,7 +21,7 @@ This site is a static HTML page with no build tools required.
 3. Adjust styling in `css/style.css` to match your brand.
 
 ### Deploying to GitHub Pages
-Publish from the `docs` folder and keep the included `.nojekyll` inside that folder so GitHub Pages serves the site as plain HTML/CSS without running Jekyll. This avoids build-time theme or plugin errors during deployment and prevents Jekyll from looking for non-existent `assets/css/style.scss` files.
+Add or keep the included `.nojekyll` file in the repository root so GitHub Pages serves the site as plain HTML/CSS without running Jekyll. This avoids build-time theme or plugin errors during deployment.
 
 ## 📂 Structure
 ```
