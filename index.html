@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex Smith | Developer & Designer</title>
+  <meta name="description" content="Portfolio website for Alex Smith, a developer and designer crafting human-centered digital experiences." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <div class="logo" aria-label="Alex Smith logo">AS</div>
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__toggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav__links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__content">
+        <div class="hero__text">
+          <p class="eyebrow">Developer • Designer • Problem Solver</p>
+          <h1>Hello, I'm <span>Alex Smith</span></h1>
+          <p class="lead">I build thoughtful, human-centered digital experiences that blend clean code with intentional design.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#projects">View Projects</a>
+            <a class="btn btn--ghost" href="mailto:alex.smith@example.com">Let's talk</a>
+          </div>
+          <dl class="hero__stats" aria-label="Key achievements">
+            <div>
+              <dt>5+</dt>
+              <dd>Years of experience</dd>
+            </div>
+            <div>
+              <dt>30+</dt>
+              <dd>Projects delivered</dd>
+            </div>
+            <div>
+              <dt>100%</dt>
+              <dd>Client satisfaction</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="hero__portrait" aria-hidden="true">
+          <div class="portrait__circle">
+            <div class="portrait__glow"></div>
+            <div class="portrait__avatar">
+              <span>AS</span>
+            </div>
+          </div>
+          <div class="badge badge--primary">Open to opportunities</div>
+          <div class="badge badge--secondary">Remote ready</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container section__header">
+        <p class="eyebrow">About</p>
+        <h2>Building elegant solutions for complex problems</h2>
+        <p class="section__lead">I specialize in crafting performant, accessible experiences with a focus on clear communication and collaboration.</p>
+      </div>
+      <div class="container grid grid--two">
+        <div class="card card--soft">
+          <h3>What I do</h3>
+          <p>I design and develop web applications with modern tooling, clean architecture, and maintainable code.</p>
+          <ul class="list">
+            <li>Frontend development with semantic HTML, CSS, and JavaScript</li>
+            <li>Design systems and component libraries</li>
+            <li>UX prototyping and usability testing</li>
+          </ul>
+        </div>
+        <div class="card card--soft">
+          <h3>How I work</h3>
+          <p>Collaboration and iteration are core to my process. I partner closely with stakeholders to ship meaningful results.</p>
+          <ul class="list">
+            <li>Clear communication and frequent check-ins</li>
+            <li>Accessible, inclusive design as a baseline</li>
+            <li>Iterative delivery with measurable outcomes</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section section--muted">
+      <div class="container section__header">
+        <p class="eyebrow">Projects</p>
+        <h2>Recent highlights</h2>
+        <p class="section__lead">Selected work that blends frontend craft, thoughtful interactions, and measurable impact.</p>
+      </div>
+      <div class="container grid grid--three">
+        <article class="card project">
+          <div class="project__meta">
+            <span class="pill">Product Design</span>
+            <span class="pill pill--light">2024</span>
+          </div>
+          <h3>Workflow OS</h3>
+          <p>Designed and built a responsive dashboard for a remote-first team platform, improving task completion by 22%.</p>
+          <ul class="tag-list">
+            <li>React</li>
+            <li>TypeScript</li>
+            <li>Tailwind</li>
+          </ul>
+        </article>
+        <article class="card project">
+          <div class="project__meta">
+            <span class="pill">Frontend</span>
+            <span class="pill pill--light">2023</span>
+          </div>
+          <h3>Insight Analytics</h3>
+          <p>Delivered interactive data visualizations for a SaaS analytics suite with accessibility-first components.</p>
+          <ul class="tag-list">
+            <li>Vue</li>
+            <li>D3.js</li>
+            <li>Jest</li>
+          </ul>
+        </article>
+        <article class="card project">
+          <div class="project__meta">
+            <span class="pill">Full Stack</span>
+            <span class="pill pill--light">2022</span>
+          </div>
+          <h3>CareConnect</h3>
+          <p>Launched a telehealth MVP with secure patient messaging and appointment workflows.</p>
+          <ul class="tag-list">
+            <li>Next.js</li>
+            <li>Node.js</li>
+            <li>PostgreSQL</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container section__header">
+        <p class="eyebrow">Skills</p>
+        <h2>Tools I rely on</h2>
+        <p class="section__lead">A balanced toolkit across development, design, and collaboration.</p>
+      </div>
+      <div class="container grid grid--three">
+        <div class="card card--outline">
+          <h3>Development</h3>
+          <ul class="tag-list tag-list--columns">
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Next.js</li>
+            <li>Node.js</li>
+            <li>REST APIs</li>
+          </ul>
+        </div>
+        <div class="card card--outline">
+          <h3>Design</h3>
+          <ul class="tag-list tag-list--columns">
+            <li>Figma</li>
+            <li>Design systems</li>
+            <li>Prototyping</li>
+            <li>Wireframing</li>
+            <li>Accessibility</li>
+            <li>Motion design</li>
+          </ul>
+        </div>
+        <div class="card card--outline">
+          <h3>Collaboration</h3>
+          <ul class="tag-list tag-list--columns">
+            <li>Product discovery</li>
+            <li>Agile delivery</li>
+            <li>Workshops</li>
+            <li>Documentation</li>
+            <li>Mentorship</li>
+            <li>Presentations</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section--muted">
+      <div class="container contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Let's create something meaningful</h2>
+          <p class="section__lead">Whether you have a new project in mind or need support on an existing product, I'd love to chat.</p>
+          <div class="contact__links">
+            <a class="btn btn--primary" href="mailto:alex.smith@example.com">Email me</a>
+            <a class="btn btn--ghost" href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+        <div class="card card--soft contact__details">
+          <h3>Details</h3>
+          <dl>
+            <div>
+              <dt>Location</dt>
+              <dd>Remote • Open to travel</dd>
+            </div>
+            <div>
+              <dt>Timezone</dt>
+              <dd>UTC-5 (EST)</dd>
+            </div>
+            <div>
+              <dt>Availability</dt>
+              <dd>New projects from August 2025</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__content">
+      <p>© 2025 Alex Smith. Crafted with care.</p>
+      <div class="footer__links" aria-label="Social links">
+        <a href="mailto:alex.smith@example.com">Email</a>
+        <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav__toggle');
+    const navLinks = document.querySelector('.nav__links');
+
+    navToggle.addEventListener('click', () => {
+      const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', String(!isExpanded));
+      navLinks.classList.toggle('nav__links--open');
+    });
+
+    navLinks.addEventListener('click', (event) => {
+      if (event.target.tagName === 'A') {
+        navLinks.classList.remove('nav__links--open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  </script>
+</body>
+</html>
