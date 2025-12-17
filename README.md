@@ -20,12 +20,20 @@ This site is a static HTML page with no build tools required.
 2. Customize content in `index.html` (name, bio, projects, links).
 3. Adjust styling in `css/style.css` to match your brand.
 
+### Deploying to GitHub Pages
+Publish from the `docs` folder and keep the included `.nojekyll` inside that folder so GitHub Pages serves the site as plain HTML/CSS without running Jekyll. This avoids build-time theme or plugin errors during deployment and prevents Jekyll from looking for non-existent `assets/css/style.scss` files.
+
 ## 📂 Structure
 ```
 Personal-Website/
-├── index.html      # Main page
+├── docs/
+│   ├── index.html      # Main page (published by GitHub Pages)
+│   ├── css/
+│   │   └── style.css   # Global styles
+│   └── .nojekyll
+├── index.html          # Local copy for quick preview
 ├── css/
-│   └── style.css   # Global styles
+│   └── style.css       # Local copy for quick preview
 ├── LICENSE
 └── README.md
 ```
